@@ -34,9 +34,39 @@ def save_function_status(group_id, status):
     save_switch(group_id, "QFNUGetFreeClassrooms", status)
 
 
-# 处理元事件，用于启动时确保数据目录存在
-async def handle_QFNUGetFreeClassrooms_meta_event(websocket):
-    os.makedirs(DATA_DIR, exist_ok=True)
+# 更新令牌
+async def update_token(websocket, user_id, raw_message, authorized):
+    """
+    更新令牌
+    """
+    try:
+        # 鉴权
+        if not authorized:
+            await send_private_msg(
+                websocket,
+                user_id,
+                "你没有权限更新令牌，请联系管理员。",
+            )
+            return
+        TOKEN_DIR = os.path.join(DATA_DIR, "token.txt")
+        token = raw_message.replace("更新令牌", "")
+        with open(TOKEN_DIR, "w", encoding="utf-8") as f:
+            f.write(token)
+    except Exception as e:
+        logging.error(f"更新令牌失败: {e}")
+        await send_private_msg(
+            websocket,
+            user_id,
+            "更新令牌失败，错误信息：" + str(e),
+        )
+        return
+
+
+# 获取令牌
+def get_token():
+    TOKEN_DIR = os.path.join(DATA_DIR, "token.txt")
+    with open(TOKEN_DIR, "r", encoding="utf-8") as f:
+        return f.read()
 
 
 # 处理开关状态
@@ -78,7 +108,7 @@ async def handle_QFNUGetFreeClassrooms_group_message(websocket, msg):
         authorized = user_id in owner_id
 
         # 开关
-        if raw_message == "QFNUGetFreeClassrooms":
+        if raw_message == "qgfc":
             await toggle_function_status(websocket, group_id, message_id, authorized)
             return
         # 检查是否开启
@@ -101,7 +131,13 @@ async def handle_QFNUGetFreeClassrooms_private_message(websocket, msg):
     try:
         user_id = str(msg.get("user_id"))
         raw_message = str(msg.get("raw_message"))
-        pass
+        message_id = str(msg.get("message_id"))
+        authorized = user_id in owner_id
+
+        # 更新令牌
+        if raw_message.startswith("更新令牌"):
+            await update_token(websocket, user_id, raw_message, authorized)
+            return
     except Exception as e:
         logging.error(f"处理QFNUGetFreeClassrooms私聊消息失败: {e}")
         await send_private_msg(
