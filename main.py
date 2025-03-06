@@ -34,39 +34,34 @@ def save_function_status(group_id, status):
     save_switch(group_id, "QFNUGetFreeClassrooms", status)
 
 
-# 更新令牌
-async def update_token(websocket, user_id, raw_message, authorized):
-    """
-    更新令牌
-    """
-    try:
-        # 鉴权
-        if not authorized:
-            await send_private_msg(
-                websocket,
-                user_id,
-                "你没有权限更新令牌，请联系管理员。",
-            )
-            return
-        TOKEN_DIR = os.path.join(DATA_DIR, "token.txt")
-        token = raw_message.replace("更新令牌", "")
-        with open(TOKEN_DIR, "w", encoding="utf-8") as f:
-            f.write(token)
-    except Exception as e:
-        logging.error(f"更新令牌失败: {e}")
+async def save_account_and_password(
+    websocket, user_id, message_id, raw_message, authorized
+):
+    """保存账号和密码"""
+    if not authorized:
         await send_private_msg(
             websocket,
             user_id,
-            "更新令牌失败，错误信息：" + str(e),
+            f"[CQ:reply,id={message_id}]❌❌❌你没有权限对QFNUGetFreeClassrooms功能进行操作,请联系管理员。",
         )
         return
+    if raw_message.startswith("存储教务账号密码"):
+        account, password = raw_message.replace("存储教务账号密码", "").split(" ")
+        # 确保数据目录存在
+        os.makedirs(DATA_DIR, exist_ok=True)
+        with open(os.path.join(DATA_DIR, "account.json"), "w") as f:
+            json.dump({"account": account, "password": password}, f)
+        await send_private_msg(
+            websocket,
+            user_id,
+            f"[CQ:reply,id={message_id}]✅✅✅账号和密码已保存",
+        )
 
 
-# 获取令牌
-def get_token():
-    TOKEN_DIR = os.path.join(DATA_DIR, "token.txt")
-    with open(TOKEN_DIR, "r", encoding="utf-8") as f:
-        return f.read()
+def load_account_and_password():
+    """加载账号和密码"""
+    with open(os.path.join(DATA_DIR, "account.json"), "r") as f:
+        return json.load(f)
 
 
 # 处理开关状态
@@ -96,24 +91,24 @@ async def toggle_function_status(websocket, group_id, message_id, authorized):
 
 
 # 群消息处理函数
-async def handle_QFNUGetFreeClassrooms_group_message(websocket, msg):
+async def handle_group_message(websocket, msg):
+    """处理群消息"""
     # 确保数据目录存在
     os.makedirs(DATA_DIR, exist_ok=True)
     try:
         user_id = str(msg.get("user_id"))
         group_id = str(msg.get("group_id"))
         raw_message = str(msg.get("raw_message"))
-        role = str(msg.get("sender", {}).get("role"))
         message_id = str(msg.get("message_id"))
         authorized = user_id in owner_id
 
-        # 开关
-        if raw_message == "qgfc":
+        # 处理开关命令
+        if raw_message.lower() == "qgfc":
             await toggle_function_status(websocket, group_id, message_id, authorized)
             return
-        # 检查是否开启
+        # 检查功能是否开启
         if load_function_status(group_id):
-            # 其他处理函数
+            # 其他群消息处理逻辑
             pass
     except Exception as e:
         logging.error(f"处理QFNUGetFreeClassrooms群消息失败: {e}")
@@ -126,18 +121,15 @@ async def handle_QFNUGetFreeClassrooms_group_message(websocket, msg):
 
 
 # 私聊消息处理函数
-async def handle_QFNUGetFreeClassrooms_private_message(websocket, msg):
+async def handle_private_message(websocket, msg):
+    """处理私聊消息"""
     os.makedirs(DATA_DIR, exist_ok=True)
     try:
         user_id = str(msg.get("user_id"))
         raw_message = str(msg.get("raw_message"))
-        message_id = str(msg.get("message_id"))
         authorized = user_id in owner_id
-
-        # 更新令牌
-        if raw_message.startswith("更新令牌"):
-            await update_token(websocket, user_id, raw_message, authorized)
-            return
+        # 私聊消息处理逻辑
+        await save_account_and_password(websocket, user_id, raw_message, authorized)
     except Exception as e:
         logging.error(f"处理QFNUGetFreeClassrooms私聊消息失败: {e}")
         await send_private_msg(
@@ -149,15 +141,15 @@ async def handle_QFNUGetFreeClassrooms_private_message(websocket, msg):
 
 
 # 群通知处理函数
-async def handle_QFNUGetFreeClassrooms_group_notice(websocket, msg):
+async def handle_group_notice(websocket, msg):
+    """处理群通知"""
     # 确保数据目录存在
     os.makedirs(DATA_DIR, exist_ok=True)
     try:
         user_id = str(msg.get("user_id"))
         group_id = str(msg.get("group_id"))
-        raw_message = str(msg.get("raw_message"))
-        role = str(msg.get("sender", {}).get("role"))
-        message_id = str(msg.get("message_id"))
+        notice_type = str(msg.get("notice_type"))
+        operator_id = str(msg.get("operator_id", ""))
 
     except Exception as e:
         logging.error(f"处理QFNUGetFreeClassrooms群通知失败: {e}")
@@ -170,14 +162,73 @@ async def handle_QFNUGetFreeClassrooms_group_notice(websocket, msg):
 
 
 # 回应事件处理函数
-async def handle_QFNUGetFreeClassrooms_response_message(websocket, message):
+async def handle_response(websocket, msg):
+    """处理回调事件"""
     try:
-        msg = json.loads(message)
-
-        if msg.get("status") == "ok":
-            echo = msg.get("echo")
-
-            if echo and echo.startswith("xxx"):
-                pass
+        echo = msg.get("echo")
+        if echo and echo.startswith("xxx"):
+            # 回调处理逻辑
+            pass
     except Exception as e:
-        logging.error(f"处理QFNUGetFreeClassrooms回应事件时发生错误: {e}")
+        logging.error(f"处理QFNUGetFreeClassrooms回调事件失败: {e}")
+        await send_group_msg(
+            websocket,
+            msg.get("group_id"),
+            f"处理QFNUGetFreeClassrooms回调事件失败，错误信息：{str(e)}",
+        )
+        return
+
+
+# 统一事件处理入口
+async def handle_events(websocket, msg):
+    """统一事件处理入口"""
+    post_type = msg.get("post_type", "response")  # 添加默认值
+    try:
+        # 处理回调事件
+        if msg.get("status") == "ok":
+            await handle_response(websocket, msg)
+            return
+
+        post_type = msg.get("post_type")
+
+        # 处理元事件
+        if post_type == "meta_event":
+            ...
+
+        # 处理消息事件
+        elif post_type == "message":
+            message_type = msg.get("message_type")
+            if message_type == "group":
+                await handle_group_message(websocket, msg)
+            elif message_type == "private":
+                await handle_private_message(websocket, msg)
+
+        # 处理通知事件
+        elif post_type == "notice":
+            await handle_group_notice(websocket, msg)
+
+    except Exception as e:
+        error_type = {
+            "message": "消息",
+            "notice": "通知",
+            "request": "请求",
+            "meta_event": "元事件",
+        }.get(post_type, "未知")
+
+        logging.error(f"处理QFNUGetFreeClassrooms{error_type}事件失败: {e}")
+
+        # 发送错误提示
+        if post_type == "message":
+            message_type = msg.get("message_type")
+            if message_type == "group":
+                await send_group_msg(
+                    websocket,
+                    msg.get("group_id"),
+                    f"处理QFNUGetFreeClassrooms{error_type}事件失败，错误信息：{str(e)}",
+                )
+            elif message_type == "private":
+                await send_private_msg(
+                    websocket,
+                    msg.get("user_id"),
+                    f"处理QFNUGetFreeClassrooms{error_type}事件失败，错误信息：{str(e)}",
+                )
