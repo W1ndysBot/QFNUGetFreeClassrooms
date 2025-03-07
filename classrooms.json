@@ -1,0 +1,3694 @@
+{
+    "buildings": [
+        {
+            "name": "F楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "F403",
+                            "area": "",
+                            "room_number": "03"
+                        },
+                        {
+                            "name": "F308",
+                            "area": "",
+                            "room_number": "08"
+                        },
+                        {
+                            "name": "F101-102",
+                            "area": "",
+                            "room_number": "101-102"
+                        },
+                        {
+                            "name": "F312",
+                            "area": "",
+                            "room_number": "12"
+                        },
+                        {
+                            "name": "F313",
+                            "area": "",
+                            "room_number": "13"
+                        },
+                        {
+                            "name": "F222-223",
+                            "area": "",
+                            "room_number": "222-223"
+                        },
+                        {
+                            "name": "F228-229",
+                            "area": "",
+                            "room_number": "228-229"
+                        },
+                        {
+                            "name": "F233-234",
+                            "area": "",
+                            "room_number": "233-234"
+                        },
+                        {
+                            "name": "F230",
+                            "area": "",
+                            "room_number": "30"
+                        },
+                        {
+                            "name": "F303-304",
+                            "area": "",
+                            "room_number": "303-304"
+                        },
+                        {
+                            "name": "F231",
+                            "area": "",
+                            "room_number": "31"
+                        },
+                        {
+                            "name": "F315-316",
+                            "area": "",
+                            "room_number": "315-316"
+                        },
+                        {
+                            "name": "F323-324",
+                            "area": "",
+                            "room_number": "323-324"
+                        },
+                        {
+                            "name": "F329-330",
+                            "area": "",
+                            "room_number": "329-330"
+                        },
+                        {
+                            "name": "F335",
+                            "area": "",
+                            "room_number": "35"
+                        },
+                        {
+                            "name": "F411-412",
+                            "area": "",
+                            "room_number": "411-412"
+                        },
+                        {
+                            "name": "F413-414",
+                            "area": "",
+                            "room_number": "413-414"
+                        },
+                        {
+                            "name": "F415-416",
+                            "area": "",
+                            "room_number": "415-416"
+                        },
+                        {
+                            "name": "F421-422",
+                            "area": "",
+                            "room_number": "421-422"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "J楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "JY203理论大课教室",
+                            "area": "",
+                            "room_number": "203理论大课教室"
+                        },
+                        {
+                            "name": "JY301理论大课教室",
+                            "area": "",
+                            "room_number": "301理论大课教室"
+                        }
+                    ]
+                },
+                {
+                    "name": "A",
+                    "rooms": [
+                        {
+                            "name": "JA101",
+                            "area": "A",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "JA102",
+                            "area": "A",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "JA103",
+                            "area": "A",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "JA104",
+                            "area": "A",
+                            "room_number": "104"
+                        },
+                        {
+                            "name": "JA105",
+                            "area": "A",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "JA106",
+                            "area": "A",
+                            "room_number": "106"
+                        },
+                        {
+                            "name": "JA201",
+                            "area": "A",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "JA202",
+                            "area": "A",
+                            "room_number": "202"
+                        },
+                        {
+                            "name": "JA203",
+                            "area": "A",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "JA204",
+                            "area": "A",
+                            "room_number": "204"
+                        },
+                        {
+                            "name": "JA205",
+                            "area": "A",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "JA206",
+                            "area": "A",
+                            "room_number": "206"
+                        },
+                        {
+                            "name": "JA301",
+                            "area": "A",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "JA302",
+                            "area": "A",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "JA303",
+                            "area": "A",
+                            "room_number": "303"
+                        },
+                        {
+                            "name": "JA304",
+                            "area": "A",
+                            "room_number": "304"
+                        },
+                        {
+                            "name": "JA305",
+                            "area": "A",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "JA306",
+                            "area": "A",
+                            "room_number": "306"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "rooms": [
+                        {
+                            "name": "JB101",
+                            "area": "B",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "JB102",
+                            "area": "B",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "JB103",
+                            "area": "B",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "JB201",
+                            "area": "B",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "JB202",
+                            "area": "B",
+                            "room_number": "202"
+                        },
+                        {
+                            "name": "JB203",
+                            "area": "B",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "JB208",
+                            "area": "B",
+                            "room_number": "208"
+                        },
+                        {
+                            "name": "JB210",
+                            "area": "B",
+                            "room_number": "210"
+                        },
+                        {
+                            "name": "JB301",
+                            "area": "B",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "JB302",
+                            "area": "B",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "JB303",
+                            "area": "B",
+                            "room_number": "303"
+                        },
+                        {
+                            "name": "JB305",
+                            "area": "B",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "JB306",
+                            "area": "B",
+                            "room_number": "306"
+                        },
+                        {
+                            "name": "JB307",
+                            "area": "B",
+                            "room_number": "307"
+                        },
+                        {
+                            "name": "JB308",
+                            "area": "B",
+                            "room_number": "308"
+                        },
+                        {
+                            "name": "JB310",
+                            "area": "B",
+                            "room_number": "310"
+                        },
+                        {
+                            "name": "JB401",
+                            "area": "B",
+                            "room_number": "401"
+                        },
+                        {
+                            "name": "JB403",
+                            "area": "B",
+                            "room_number": "403"
+                        },
+                        {
+                            "name": "JB408",
+                            "area": "B",
+                            "room_number": "408"
+                        },
+                        {
+                            "name": "JB410",
+                            "area": "B",
+                            "room_number": "410"
+                        }
+                    ]
+                },
+                {
+                    "name": "C",
+                    "rooms": [
+                        {
+                            "name": "JC101",
+                            "area": "C",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "JC102",
+                            "area": "C",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "JC103",
+                            "area": "C",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "JC104",
+                            "area": "C",
+                            "room_number": "104"
+                        },
+                        {
+                            "name": "JC108",
+                            "area": "C",
+                            "room_number": "108"
+                        },
+                        {
+                            "name": "JC201",
+                            "area": "C",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "JC202",
+                            "area": "C",
+                            "room_number": "202"
+                        },
+                        {
+                            "name": "JC203",
+                            "area": "C",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "JC208",
+                            "area": "C",
+                            "room_number": "208"
+                        },
+                        {
+                            "name": "JC301",
+                            "area": "C",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "JC302",
+                            "area": "C",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "JC305",
+                            "area": "C",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "JC306",
+                            "area": "C",
+                            "room_number": "306"
+                        },
+                        {
+                            "name": "JC307",
+                            "area": "C",
+                            "room_number": "307"
+                        },
+                        {
+                            "name": "JC308",
+                            "area": "C",
+                            "room_number": "308"
+                        },
+                        {
+                            "name": "JC314",
+                            "area": "C",
+                            "room_number": "314"
+                        },
+                        {
+                            "name": "JC401",
+                            "area": "C",
+                            "room_number": "401"
+                        },
+                        {
+                            "name": "JC402",
+                            "area": "C",
+                            "room_number": "402"
+                        },
+                        {
+                            "name": "JC405",
+                            "area": "C",
+                            "room_number": "405"
+                        },
+                        {
+                            "name": "JC406",
+                            "area": "C",
+                            "room_number": "406"
+                        },
+                        {
+                            "name": "JC407",
+                            "area": "C",
+                            "room_number": "407"
+                        },
+                        {
+                            "name": "JC408",
+                            "area": "C",
+                            "room_number": "408"
+                        },
+                        {
+                            "name": "JC412",
+                            "area": "C",
+                            "room_number": "412"
+                        },
+                        {
+                            "name": "JC501",
+                            "area": "C",
+                            "room_number": "501"
+                        },
+                        {
+                            "name": "JC502",
+                            "area": "C",
+                            "room_number": "502"
+                        },
+                        {
+                            "name": "JC505",
+                            "area": "C",
+                            "room_number": "505"
+                        },
+                        {
+                            "name": "JC506",
+                            "area": "C",
+                            "room_number": "506"
+                        },
+                        {
+                            "name": "JC507",
+                            "area": "C",
+                            "room_number": "507"
+                        },
+                        {
+                            "name": "JC508",
+                            "area": "C",
+                            "room_number": "508"
+                        },
+                        {
+                            "name": "JC601",
+                            "area": "C",
+                            "room_number": "601"
+                        },
+                        {
+                            "name": "JC605",
+                            "area": "C",
+                            "room_number": "605"
+                        },
+                        {
+                            "name": "JC607",
+                            "area": "C",
+                            "room_number": "607"
+                        },
+                        {
+                            "name": "JC709",
+                            "area": "C",
+                            "room_number": "709"
+                        },
+                        {
+                            "name": "JC710",
+                            "area": "C",
+                            "room_number": "710"
+                        },
+                        {
+                            "name": "JC712",
+                            "area": "C",
+                            "room_number": "712"
+                        },
+                        {
+                            "name": "JC714",
+                            "area": "C",
+                            "room_number": "714"
+                        },
+                        {
+                            "name": "JC716",
+                            "area": "C",
+                            "room_number": "716"
+                        }
+                    ]
+                },
+                {
+                    "name": "D",
+                    "rooms": [
+                        {
+                            "name": "JD101",
+                            "area": "D",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "JD201",
+                            "area": "D",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "JD205",
+                            "area": "D",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "JD207",
+                            "area": "D",
+                            "room_number": "207"
+                        },
+                        {
+                            "name": "JD209",
+                            "area": "D",
+                            "room_number": "209"
+                        },
+                        {
+                            "name": "JD211",
+                            "area": "D",
+                            "room_number": "211"
+                        },
+                        {
+                            "name": "JD213",
+                            "area": "D",
+                            "room_number": "213"
+                        },
+                        {
+                            "name": "JD215",
+                            "area": "D",
+                            "room_number": "215"
+                        },
+                        {
+                            "name": "JD301",
+                            "area": "D",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "JD302",
+                            "area": "D",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "JD305",
+                            "area": "D",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "JD307",
+                            "area": "D",
+                            "room_number": "307"
+                        },
+                        {
+                            "name": "JD311",
+                            "area": "D",
+                            "room_number": "311"
+                        },
+                        {
+                            "name": "JD313",
+                            "area": "D",
+                            "room_number": "313"
+                        },
+                        {
+                            "name": "JD315",
+                            "area": "D",
+                            "room_number": "315"
+                        },
+                        {
+                            "name": "JD402",
+                            "area": "D",
+                            "room_number": "402"
+                        },
+                        {
+                            "name": "JD405",
+                            "area": "D",
+                            "room_number": "405"
+                        }
+                    ]
+                },
+                {
+                    "name": "E",
+                    "rooms": [
+                        {
+                            "name": "JE101",
+                            "area": "E",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "JE102",
+                            "area": "E",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "JE103",
+                            "area": "E",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "JE104",
+                            "area": "E",
+                            "room_number": "104"
+                        },
+                        {
+                            "name": "JE105",
+                            "area": "E",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "JE201",
+                            "area": "E",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "JE202",
+                            "area": "E",
+                            "room_number": "202"
+                        },
+                        {
+                            "name": "JE203",
+                            "area": "E",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "JE204",
+                            "area": "E",
+                            "room_number": "204"
+                        },
+                        {
+                            "name": "JE301",
+                            "area": "E",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "JE302",
+                            "area": "E",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "JE303",
+                            "area": "E",
+                            "room_number": "303"
+                        },
+                        {
+                            "name": "JE304",
+                            "area": "E",
+                            "room_number": "304"
+                        },
+                        {
+                            "name": "JE305",
+                            "area": "E",
+                            "room_number": "305"
+                        }
+                    ]
+                },
+                {
+                    "name": "F",
+                    "rooms": [
+                        {
+                            "name": "JF306",
+                            "area": "F",
+                            "room_number": "306"
+                        }
+                    ]
+                },
+                {
+                    "name": "S",
+                    "rooms": [
+                        {
+                            "name": "JS102",
+                            "area": "S",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "JS103",
+                            "area": "S",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "JS104",
+                            "area": "S",
+                            "room_number": "104"
+                        },
+                        {
+                            "name": "JS105",
+                            "area": "S",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "JS107",
+                            "area": "S",
+                            "room_number": "107"
+                        },
+                        {
+                            "name": "JS201",
+                            "area": "S",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "JS203",
+                            "area": "S",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "JS204",
+                            "area": "S",
+                            "room_number": "204"
+                        },
+                        {
+                            "name": "JS207",
+                            "area": "S",
+                            "room_number": "207"
+                        },
+                        {
+                            "name": "JS213",
+                            "area": "S",
+                            "room_number": "213"
+                        },
+                        {
+                            "name": "JS214",
+                            "area": "S",
+                            "room_number": "214"
+                        },
+                        {
+                            "name": "JS215",
+                            "area": "S",
+                            "room_number": "215"
+                        },
+                        {
+                            "name": "JS219",
+                            "area": "S",
+                            "room_number": "219"
+                        },
+                        {
+                            "name": "JS225",
+                            "area": "S",
+                            "room_number": "225"
+                        },
+                        {
+                            "name": "JS226",
+                            "area": "S",
+                            "room_number": "226"
+                        },
+                        {
+                            "name": "JS227",
+                            "area": "S",
+                            "room_number": "227"
+                        },
+                        {
+                            "name": "JS229",
+                            "area": "S",
+                            "room_number": "229"
+                        },
+                        {
+                            "name": "JS231",
+                            "area": "S",
+                            "room_number": "231"
+                        },
+                        {
+                            "name": "JS301",
+                            "area": "S",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "JS302",
+                            "area": "S",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "JS303",
+                            "area": "S",
+                            "room_number": "303"
+                        },
+                        {
+                            "name": "JS304",
+                            "area": "S",
+                            "room_number": "304"
+                        },
+                        {
+                            "name": "JS305",
+                            "area": "S",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "JS306",
+                            "area": "S",
+                            "room_number": "306"
+                        },
+                        {
+                            "name": "JS307",
+                            "area": "S",
+                            "room_number": "307"
+                        },
+                        {
+                            "name": "JS309",
+                            "area": "S",
+                            "room_number": "309"
+                        },
+                        {
+                            "name": "JS310",
+                            "area": "S",
+                            "room_number": "310"
+                        },
+                        {
+                            "name": "JS313",
+                            "area": "S",
+                            "room_number": "313"
+                        },
+                        {
+                            "name": "JS314",
+                            "area": "S",
+                            "room_number": "314"
+                        },
+                        {
+                            "name": "JS315",
+                            "area": "S",
+                            "room_number": "315"
+                        },
+                        {
+                            "name": "JS316",
+                            "area": "S",
+                            "room_number": "316"
+                        },
+                        {
+                            "name": "JS317",
+                            "area": "S",
+                            "room_number": "317"
+                        },
+                        {
+                            "name": "JS318",
+                            "area": "S",
+                            "room_number": "318"
+                        },
+                        {
+                            "name": "JS320",
+                            "area": "S",
+                            "room_number": "320"
+                        },
+                        {
+                            "name": "JS324",
+                            "area": "S",
+                            "room_number": "324"
+                        },
+                        {
+                            "name": "JS329",
+                            "area": "S",
+                            "room_number": "329"
+                        },
+                        {
+                            "name": "JS401",
+                            "area": "S",
+                            "room_number": "401"
+                        },
+                        {
+                            "name": "JS402",
+                            "area": "S",
+                            "room_number": "402"
+                        },
+                        {
+                            "name": "JS403",
+                            "area": "S",
+                            "room_number": "403"
+                        },
+                        {
+                            "name": "JS404",
+                            "area": "S",
+                            "room_number": "404"
+                        },
+                        {
+                            "name": "JS405",
+                            "area": "S",
+                            "room_number": "405"
+                        },
+                        {
+                            "name": "JS406",
+                            "area": "S",
+                            "room_number": "406"
+                        },
+                        {
+                            "name": "JS407",
+                            "area": "S",
+                            "room_number": "407"
+                        },
+                        {
+                            "name": "JS413",
+                            "area": "S",
+                            "room_number": "413"
+                        },
+                        {
+                            "name": "JS414",
+                            "area": "S",
+                            "room_number": "414"
+                        },
+                        {
+                            "name": "JS415",
+                            "area": "S",
+                            "room_number": "415"
+                        },
+                        {
+                            "name": "JS430",
+                            "area": "S",
+                            "room_number": "430"
+                        },
+                        {
+                            "name": "JS431",
+                            "area": "S",
+                            "room_number": "431"
+                        },
+                        {
+                            "name": "JS433",
+                            "area": "S",
+                            "room_number": "433"
+                        },
+                        {
+                            "name": "JS434",
+                            "area": "S",
+                            "room_number": "434"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "M",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "M202",
+                            "area": "",
+                            "room_number": "202"
+                        },
+                        {
+                            "name": "M205",
+                            "area": "",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "M212",
+                            "area": "",
+                            "room_number": "212"
+                        },
+                        {
+                            "name": "M213",
+                            "area": "",
+                            "room_number": "213"
+                        },
+                        {
+                            "name": "M301",
+                            "area": "",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "M302",
+                            "area": "",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "M303",
+                            "area": "",
+                            "room_number": "303"
+                        },
+                        {
+                            "name": "M305",
+                            "area": "",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "M310",
+                            "area": "",
+                            "room_number": "310"
+                        },
+                        {
+                            "name": "M311",
+                            "area": "",
+                            "room_number": "311"
+                        },
+                        {
+                            "name": "M313",
+                            "area": "",
+                            "room_number": "313"
+                        },
+                        {
+                            "name": "M501",
+                            "area": "",
+                            "room_number": "501"
+                        },
+                        {
+                            "name": "M502",
+                            "area": "",
+                            "room_number": "502"
+                        },
+                        {
+                            "name": "M503",
+                            "area": "",
+                            "room_number": "503"
+                        },
+                        {
+                            "name": "M504",
+                            "area": "",
+                            "room_number": "504"
+                        },
+                        {
+                            "name": "M507",
+                            "area": "",
+                            "room_number": "507"
+                        },
+                        {
+                            "name": "M508",
+                            "area": "",
+                            "room_number": "508"
+                        },
+                        {
+                            "name": "M509",
+                            "area": "",
+                            "room_number": "509"
+                        },
+                        {
+                            "name": "M510",
+                            "area": "",
+                            "room_number": "510"
+                        },
+                        {
+                            "name": "M511",
+                            "area": "",
+                            "room_number": "511"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "乒乓球馆",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "乒乓球馆",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "书法楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "书法楼101、102",
+                            "area": "",
+                            "room_number": "101、102"
+                        },
+                        {
+                            "name": "书法楼118",
+                            "area": "",
+                            "room_number": "118"
+                        },
+                        {
+                            "name": "书法楼201",
+                            "area": "",
+                            "room_number": "201"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "体操房",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "体操房",
+                            "area": "",
+                            "room_number": "无编号"
+                        },
+                        {
+                            "name": "体操房",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "体育场馆",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "体育馆瑜伽场地",
+                            "area": "",
+                            "room_number": "伽场地"
+                        },
+                        {
+                            "name": "健美操教室",
+                            "area": "",
+                            "room_number": "室"
+                        },
+                        {
+                            "name": "体育舞蹈教室",
+                            "area": "",
+                            "room_number": "教室"
+                        },
+                        {
+                            "name": "武术馆1",
+                            "area": "",
+                            "room_number": "无编号"
+                        },
+                        {
+                            "name": "武术馆2",
+                            "area": "",
+                            "room_number": "无编号"
+                        },
+                        {
+                            "name": "武术馆3",
+                            "area": "",
+                            "room_number": "无编号"
+                        },
+                        {
+                            "name": "东运动场武术场地",
+                            "area": "",
+                            "room_number": "武术场地"
+                        },
+                        {
+                            "name": "体育馆羽毛球场地",
+                            "area": "",
+                            "room_number": "毛球场地"
+                        },
+                        {
+                            "name": "体育馆健美操场地",
+                            "area": "",
+                            "room_number": "美操场地"
+                        },
+                        {
+                            "name": "瑜伽教室（B12北沿街）",
+                            "area": "",
+                            "room_number": "（B12北沿街）"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "体育楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "体育楼206",
+                            "area": "",
+                            "room_number": "206"
+                        },
+                        {
+                            "name": "体育楼209",
+                            "area": "",
+                            "room_number": "209"
+                        },
+                        {
+                            "name": "体育楼210",
+                            "area": "",
+                            "room_number": "210"
+                        },
+                        {
+                            "name": "体育楼301",
+                            "area": "",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "体育楼302",
+                            "area": "",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "体育楼304",
+                            "area": "",
+                            "room_number": "304"
+                        },
+                        {
+                            "name": "体育楼305",
+                            "area": "",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "体育楼401",
+                            "area": "",
+                            "room_number": "401"
+                        },
+                        {
+                            "name": "体育楼404",
+                            "area": "",
+                            "room_number": "404"
+                        },
+                        {
+                            "name": "体育楼405",
+                            "area": "",
+                            "room_number": "405"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "保健课堂",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "保健课堂",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "公体球类馆",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "公体球类馆01",
+                            "area": "",
+                            "room_number": "01"
+                        },
+                        {
+                            "name": "公体球类馆02",
+                            "area": "",
+                            "room_number": "02"
+                        },
+                        {
+                            "name": "公体球类馆03",
+                            "area": "",
+                            "room_number": "03"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "化学楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "化学楼101、103",
+                            "area": "",
+                            "room_number": "101、103"
+                        },
+                        {
+                            "name": "化学楼102、104",
+                            "area": "",
+                            "room_number": "102、104"
+                        },
+                        {
+                            "name": "化学楼105、107",
+                            "area": "",
+                            "room_number": "105、107"
+                        },
+                        {
+                            "name": "化学楼106、108",
+                            "area": "",
+                            "room_number": "106、108"
+                        },
+                        {
+                            "name": "化学楼109、111",
+                            "area": "",
+                            "room_number": "109、111"
+                        },
+                        {
+                            "name": "化学楼127.129",
+                            "area": "",
+                            "room_number": "127.129"
+                        },
+                        {
+                            "name": "化学楼134",
+                            "area": "",
+                            "room_number": "134"
+                        },
+                        {
+                            "name": "化学楼205.207",
+                            "area": "",
+                            "room_number": "205.207"
+                        },
+                        {
+                            "name": "化学楼210",
+                            "area": "",
+                            "room_number": "210"
+                        },
+                        {
+                            "name": "化学楼424.426",
+                            "area": "",
+                            "room_number": "424.426"
+                        },
+                        {
+                            "name": "化学楼425.427",
+                            "area": "",
+                            "room_number": "425.427"
+                        },
+                        {
+                            "name": "化学楼517",
+                            "area": "",
+                            "room_number": "517"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "场地高尔夫",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "场地高尔夫",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "外语楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "外语楼101",
+                            "area": "",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "外语楼108",
+                            "area": "",
+                            "room_number": "108"
+                        },
+                        {
+                            "name": "外语楼112",
+                            "area": "",
+                            "room_number": "112"
+                        },
+                        {
+                            "name": "外语楼113",
+                            "area": "",
+                            "room_number": "113"
+                        },
+                        {
+                            "name": "外语楼201",
+                            "area": "",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "外语楼304",
+                            "area": "",
+                            "room_number": "304"
+                        },
+                        {
+                            "name": "外语楼305",
+                            "area": "",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "外语楼308",
+                            "area": "",
+                            "room_number": "308"
+                        },
+                        {
+                            "name": "外语楼312",
+                            "area": "",
+                            "room_number": "312"
+                        },
+                        {
+                            "name": "外语楼313",
+                            "area": "",
+                            "room_number": "313"
+                        },
+                        {
+                            "name": "外语楼317",
+                            "area": "",
+                            "room_number": "317"
+                        },
+                        {
+                            "name": "外语楼401",
+                            "area": "",
+                            "room_number": "401"
+                        },
+                        {
+                            "name": "外语楼402",
+                            "area": "",
+                            "room_number": "402"
+                        },
+                        {
+                            "name": "外语楼405",
+                            "area": "",
+                            "room_number": "405"
+                        },
+                        {
+                            "name": "外语楼406",
+                            "area": "",
+                            "room_number": "406"
+                        },
+                        {
+                            "name": "外语楼410",
+                            "area": "",
+                            "room_number": "410"
+                        },
+                        {
+                            "name": "外语楼413",
+                            "area": "",
+                            "room_number": "413"
+                        },
+                        {
+                            "name": "外语楼417",
+                            "area": "",
+                            "room_number": "417"
+                        },
+                        {
+                            "name": "外语楼501",
+                            "area": "",
+                            "room_number": "501"
+                        },
+                        {
+                            "name": "外语楼502、504",
+                            "area": "",
+                            "room_number": "502、504"
+                        },
+                        {
+                            "name": "外语楼510",
+                            "area": "",
+                            "room_number": "510"
+                        },
+                        {
+                            "name": "外语楼516",
+                            "area": "",
+                            "room_number": "516"
+                        },
+                        {
+                            "name": "外语楼610、612",
+                            "area": "",
+                            "room_number": "610、612"
+                        },
+                        {
+                            "name": "外语楼615、613",
+                            "area": "",
+                            "room_number": "615、613"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "天文气象功能实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "天文气象功能实验室",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "实验中心",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "实验中心D区D102",
+                            "area": "",
+                            "room_number": "D区D102"
+                        },
+                        {
+                            "name": "实验中心D区D224",
+                            "area": "",
+                            "room_number": "D区D224"
+                        }
+                    ]
+                },
+                {
+                    "name": "A区",
+                    "rooms": [
+                        {
+                            "name": "实验中心A区A205、A207",
+                            "area": "A区",
+                            "room_number": "A205、A207"
+                        },
+                        {
+                            "name": "实验中心A区A209、A211",
+                            "area": "A区",
+                            "room_number": "A209、A211"
+                        }
+                    ]
+                },
+                {
+                    "name": "B区",
+                    "rooms": [
+                        {
+                            "name": "实验中心B区B112、B114",
+                            "area": "B区",
+                            "room_number": "B112、B114"
+                        },
+                        {
+                            "name": "实验中心B区B115、B117",
+                            "area": "B区",
+                            "room_number": "B115、B117"
+                        },
+                        {
+                            "name": "实验中心B区B116、B118",
+                            "area": "B区",
+                            "room_number": "B116、B118"
+                        },
+                        {
+                            "name": "实验中心B区B119、B121",
+                            "area": "B区",
+                            "room_number": "B119、B121"
+                        },
+                        {
+                            "name": "实验中心B区B507、B509",
+                            "area": "B区",
+                            "room_number": "B507、B509"
+                        },
+                        {
+                            "name": "实验中心B区B511、B513",
+                            "area": "B区",
+                            "room_number": "B511、B513"
+                        }
+                    ]
+                },
+                {
+                    "name": "C区",
+                    "rooms": [
+                        {
+                            "name": "实验中心C区C101、C103",
+                            "area": "C区",
+                            "room_number": "C101、C103"
+                        },
+                        {
+                            "name": "实验中心C区C113、C115",
+                            "area": "C区",
+                            "room_number": "C113、C115"
+                        },
+                        {
+                            "name": "实验中心C区C116、C118",
+                            "area": "C区",
+                            "room_number": "C116、C118"
+                        },
+                        {
+                            "name": "实验中心C区C117、C119",
+                            "area": "C区",
+                            "room_number": "C117、C119"
+                        },
+                        {
+                            "name": "实验中心C区C204、C206",
+                            "area": "C区",
+                            "room_number": "C204、C206"
+                        },
+                        {
+                            "name": "实验中心C区C205、C207",
+                            "area": "C区",
+                            "room_number": "C205、C207"
+                        },
+                        {
+                            "name": "实验中心C区C208、C210",
+                            "area": "C区",
+                            "room_number": "C208、C210"
+                        },
+                        {
+                            "name": "实验中心C区C209、C211",
+                            "area": "C区",
+                            "room_number": "C209、C211"
+                        },
+                        {
+                            "name": "实验中心C区C213、C215",
+                            "area": "C区",
+                            "room_number": "C213、C215"
+                        },
+                        {
+                            "name": "实验中心C区C216、C218",
+                            "area": "C区",
+                            "room_number": "C216、C218"
+                        },
+                        {
+                            "name": "实验中心C区C217、C219",
+                            "area": "C区",
+                            "room_number": "C217、C219"
+                        },
+                        {
+                            "name": "实验中心C区C301、C303",
+                            "area": "C区",
+                            "room_number": "C301、C303"
+                        },
+                        {
+                            "name": "实验中心C区C304、C306",
+                            "area": "C区",
+                            "room_number": "C304、C306"
+                        },
+                        {
+                            "name": "实验中心C区C308、C310",
+                            "area": "C区",
+                            "room_number": "C308、C310"
+                        },
+                        {
+                            "name": "实验中心C区C309、C311",
+                            "area": "C区",
+                            "room_number": "C309、C311"
+                        },
+                        {
+                            "name": "实验中心C区C313、C315",
+                            "area": "C区",
+                            "room_number": "C313、C315"
+                        },
+                        {
+                            "name": "实验中心C区C404、C406",
+                            "area": "C区",
+                            "room_number": "C404、C406"
+                        },
+                        {
+                            "name": "实验中心C区C405、C407",
+                            "area": "C区",
+                            "room_number": "C405、C407"
+                        },
+                        {
+                            "name": "实验中心C区C408、C410",
+                            "area": "C区",
+                            "room_number": "C408、C410"
+                        },
+                        {
+                            "name": "实验中心C区C409、C411",
+                            "area": "C区",
+                            "room_number": "C409、C411"
+                        },
+                        {
+                            "name": "实验中心C区C412、C414",
+                            "area": "C区",
+                            "room_number": "C412、C414"
+                        },
+                        {
+                            "name": "实验中心C区C416、C418",
+                            "area": "C区",
+                            "room_number": "C416、C418"
+                        },
+                        {
+                            "name": "实验中心C区C417、C419",
+                            "area": "C区",
+                            "room_number": "C417、C419"
+                        },
+                        {
+                            "name": "实验中心C区C501、C503",
+                            "area": "C区",
+                            "room_number": "C501、C503"
+                        },
+                        {
+                            "name": "实验中心C区C505、C507",
+                            "area": "C区",
+                            "room_number": "C505、C507"
+                        },
+                        {
+                            "name": "实验中心C区C509、C511",
+                            "area": "C区",
+                            "room_number": "C509、C511"
+                        },
+                        {
+                            "name": "实验中心C区C512、C514",
+                            "area": "C区",
+                            "room_number": "C512、C514"
+                        },
+                        {
+                            "name": "实验中心C区C601、C603",
+                            "area": "C区",
+                            "room_number": "C601、C603"
+                        },
+                        {
+                            "name": "实验中心C区C604、C606",
+                            "area": "C区",
+                            "room_number": "C604、C606"
+                        },
+                        {
+                            "name": "实验中心C区C605、C607",
+                            "area": "C区",
+                            "room_number": "C605、C607"
+                        },
+                        {
+                            "name": "实验中心C区C608、C610",
+                            "area": "C区",
+                            "room_number": "C608、C610"
+                        },
+                        {
+                            "name": "实验中心C区C613、C615",
+                            "area": "C区",
+                            "room_number": "C613、C615"
+                        },
+                        {
+                            "name": "实验中心C区C616、C618",
+                            "area": "C区",
+                            "room_number": "C616、C618"
+                        }
+                    ]
+                },
+                {
+                    "name": "D区",
+                    "rooms": [
+                        {
+                            "name": "实验中心D区D101、D103",
+                            "area": "D区",
+                            "room_number": "D101、D103"
+                        },
+                        {
+                            "name": "实验中心D区D106、D108",
+                            "area": "D区",
+                            "room_number": "D106、D108"
+                        },
+                        {
+                            "name": "实验中心D区D109、D111",
+                            "area": "D区",
+                            "room_number": "D109、D111"
+                        },
+                        {
+                            "name": "实验中心D区D113、D115",
+                            "area": "D区",
+                            "room_number": "D113、D115"
+                        },
+                        {
+                            "name": "实验中心D区D121、D123",
+                            "area": "D区",
+                            "room_number": "D121、D123"
+                        },
+                        {
+                            "name": "实验中心D区D201、D203",
+                            "area": "D区",
+                            "room_number": "D201、D203"
+                        },
+                        {
+                            "name": "实验中心D区D202、D204",
+                            "area": "D区",
+                            "room_number": "D202、D204"
+                        },
+                        {
+                            "name": "实验中心D区D206、D208",
+                            "area": "D区",
+                            "room_number": "D206、D208"
+                        },
+                        {
+                            "name": "实验中心D区D209、D211",
+                            "area": "D区",
+                            "room_number": "D209、D211"
+                        },
+                        {
+                            "name": "实验中心D区D213、D215",
+                            "area": "D区",
+                            "room_number": "D213、D215"
+                        },
+                        {
+                            "name": "实验中心D区D214、D216",
+                            "area": "D区",
+                            "room_number": "D214、D216"
+                        },
+                        {
+                            "name": "实验中心D区D221、D223",
+                            "area": "D区",
+                            "room_number": "D221、D223"
+                        },
+                        {
+                            "name": "实验中心D区D313、D315",
+                            "area": "D区",
+                            "room_number": "D313、D315"
+                        },
+                        {
+                            "name": "实验中心D区D402、D404",
+                            "area": "D区",
+                            "room_number": "D402、D404"
+                        },
+                        {
+                            "name": "实验中心D区D406、D408",
+                            "area": "D区",
+                            "room_number": "D406、D408"
+                        },
+                        {
+                            "name": "实验中心D区D409、D411",
+                            "area": "D区",
+                            "room_number": "D409、D411"
+                        },
+                        {
+                            "name": "实验中心D区D501、D503",
+                            "area": "D区",
+                            "room_number": "D501、D503"
+                        },
+                        {
+                            "name": "实验中心D区D506、D508",
+                            "area": "D区",
+                            "room_number": "D506、D508"
+                        },
+                        {
+                            "name": "实验中心D区D509、D511",
+                            "area": "D区",
+                            "room_number": "D509、D511"
+                        },
+                        {
+                            "name": "实验中心D区D514、D516",
+                            "area": "D区",
+                            "room_number": "D514、D516"
+                        },
+                        {
+                            "name": "实验中心D区D613、D615",
+                            "area": "D区",
+                            "room_number": "D613、D615"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "实验中心A",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "实验中心A107、A109",
+                            "area": "",
+                            "room_number": "107、A109"
+                        },
+                        {
+                            "name": "实验中心A111",
+                            "area": "",
+                            "room_number": "111"
+                        },
+                        {
+                            "name": "实验中心A113",
+                            "area": "",
+                            "room_number": "113"
+                        },
+                        {
+                            "name": "实验中心A115、A117",
+                            "area": "",
+                            "room_number": "115、A117"
+                        },
+                        {
+                            "name": "实验中心A202",
+                            "area": "",
+                            "room_number": "202"
+                        },
+                        {
+                            "name": "实验中心A315",
+                            "area": "",
+                            "room_number": "315"
+                        },
+                        {
+                            "name": "实验中心A401",
+                            "area": "",
+                            "room_number": "401"
+                        },
+                        {
+                            "name": "实验中心A405",
+                            "area": "",
+                            "room_number": "405"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "射艺场地",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "射艺场地",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "嵌入式实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "嵌入式实验室204",
+                            "area": "",
+                            "room_number": "204"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "心理楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "心理楼202",
+                            "area": "",
+                            "room_number": "202"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "排球场",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "体育馆东排球场1",
+                            "area": "",
+                            "room_number": "东排球场1"
+                        },
+                        {
+                            "name": "体育馆北排球场1",
+                            "area": "",
+                            "room_number": "北排球场1"
+                        },
+                        {
+                            "name": "校西排球场",
+                            "area": "",
+                            "room_number": "球场"
+                        },
+                        {
+                            "name": "公体篮球馆排球场地03",
+                            "area": "",
+                            "room_number": "球馆排球场地03"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "排球馆",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "排球馆1",
+                            "area": "",
+                            "room_number": "1"
+                        },
+                        {
+                            "name": "排球馆2",
+                            "area": "",
+                            "room_number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "教学",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "教学1号楼舞蹈教室",
+                            "area": "",
+                            "room_number": "1号楼舞蹈教室"
+                        },
+                        {
+                            "name": "教学1号楼院内",
+                            "area": "",
+                            "room_number": "1号楼院内"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "教学楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "教学楼C813-815",
+                            "area": "",
+                            "room_number": "C813-815"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "教育楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "教育楼103",
+                            "area": "",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "教育楼105",
+                            "area": "",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "教育楼106",
+                            "area": "",
+                            "room_number": "106"
+                        },
+                        {
+                            "name": "教育楼303",
+                            "area": "",
+                            "room_number": "303"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "数学楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "数学楼101",
+                            "area": "",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "数学楼102",
+                            "area": "",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "数学楼103",
+                            "area": "",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "数学楼106",
+                            "area": "",
+                            "room_number": "106"
+                        },
+                        {
+                            "name": "数学楼107",
+                            "area": "",
+                            "room_number": "107"
+                        },
+                        {
+                            "name": "数学楼111",
+                            "area": "",
+                            "room_number": "111"
+                        },
+                        {
+                            "name": "数学楼121",
+                            "area": "",
+                            "room_number": "121"
+                        },
+                        {
+                            "name": "数学楼201",
+                            "area": "",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "数学楼203",
+                            "area": "",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "数学楼204",
+                            "area": "",
+                            "room_number": "204"
+                        },
+                        {
+                            "name": "数学楼207",
+                            "area": "",
+                            "room_number": "207"
+                        },
+                        {
+                            "name": "数学楼208",
+                            "area": "",
+                            "room_number": "208"
+                        },
+                        {
+                            "name": "数学楼211",
+                            "area": "",
+                            "room_number": "211"
+                        },
+                        {
+                            "name": "数学楼212",
+                            "area": "",
+                            "room_number": "212"
+                        },
+                        {
+                            "name": "数学楼506、508",
+                            "area": "",
+                            "room_number": "506、508"
+                        },
+                        {
+                            "name": "数学楼510、512",
+                            "area": "",
+                            "room_number": "510、512"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "文史楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "文史楼313",
+                            "area": "",
+                            "room_number": "313"
+                        },
+                        {
+                            "name": "文史楼320",
+                            "area": "",
+                            "room_number": "320"
+                        },
+                        {
+                            "name": "文史楼324",
+                            "area": "",
+                            "room_number": "324"
+                        },
+                        {
+                            "name": "文史楼411",
+                            "area": "",
+                            "room_number": "411"
+                        },
+                        {
+                            "name": "文史楼412",
+                            "area": "",
+                            "room_number": "412"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "旅游实训实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "旅游实训实验室",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "格物楼",
+            "areas": [
+                {
+                    "name": "A",
+                    "rooms": [
+                        {
+                            "name": "格物楼A104",
+                            "area": "A",
+                            "room_number": "104"
+                        },
+                        {
+                            "name": "格物楼A106",
+                            "area": "A",
+                            "room_number": "106"
+                        },
+                        {
+                            "name": "格物楼A205",
+                            "area": "A",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "格物楼A207",
+                            "area": "A",
+                            "room_number": "207"
+                        },
+                        {
+                            "name": "格物楼A216",
+                            "area": "A",
+                            "room_number": "216"
+                        },
+                        {
+                            "name": "格物楼A306",
+                            "area": "A",
+                            "room_number": "306"
+                        },
+                        {
+                            "name": "格物楼A308",
+                            "area": "A",
+                            "room_number": "308"
+                        },
+                        {
+                            "name": "格物楼A317",
+                            "area": "A",
+                            "room_number": "317"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "rooms": [
+                        {
+                            "name": "格物楼B101",
+                            "area": "B",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "格物楼B102",
+                            "area": "B",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "格物楼B103",
+                            "area": "B",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "格物楼B104",
+                            "area": "B",
+                            "room_number": "104"
+                        },
+                        {
+                            "name": "格物楼B105",
+                            "area": "B",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "格物楼B106",
+                            "area": "B",
+                            "room_number": "106"
+                        },
+                        {
+                            "name": "格物楼B107",
+                            "area": "B",
+                            "room_number": "107"
+                        },
+                        {
+                            "name": "格物楼B108",
+                            "area": "B",
+                            "room_number": "108"
+                        },
+                        {
+                            "name": "格物楼B109",
+                            "area": "B",
+                            "room_number": "109"
+                        },
+                        {
+                            "name": "格物楼B110",
+                            "area": "B",
+                            "room_number": "110"
+                        },
+                        {
+                            "name": "格物楼B111",
+                            "area": "B",
+                            "room_number": "111"
+                        },
+                        {
+                            "name": "格物楼B112",
+                            "area": "B",
+                            "room_number": "112"
+                        },
+                        {
+                            "name": "格物楼B113",
+                            "area": "B",
+                            "room_number": "113"
+                        },
+                        {
+                            "name": "格物楼B201",
+                            "area": "B",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "格物楼B203",
+                            "area": "B",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "格物楼B205",
+                            "area": "B",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "格物楼B206",
+                            "area": "B",
+                            "room_number": "206"
+                        },
+                        {
+                            "name": "格物楼B207",
+                            "area": "B",
+                            "room_number": "207"
+                        },
+                        {
+                            "name": "格物楼B208",
+                            "area": "B",
+                            "room_number": "208"
+                        },
+                        {
+                            "name": "格物楼B209",
+                            "area": "B",
+                            "room_number": "209"
+                        },
+                        {
+                            "name": "格物楼B210",
+                            "area": "B",
+                            "room_number": "210"
+                        },
+                        {
+                            "name": "格物楼B211",
+                            "area": "B",
+                            "room_number": "211"
+                        },
+                        {
+                            "name": "格物楼B212",
+                            "area": "B",
+                            "room_number": "212"
+                        },
+                        {
+                            "name": "格物楼B213",
+                            "area": "B",
+                            "room_number": "213"
+                        },
+                        {
+                            "name": "格物楼B215",
+                            "area": "B",
+                            "room_number": "215"
+                        },
+                        {
+                            "name": "格物楼B218",
+                            "area": "B",
+                            "room_number": "218"
+                        },
+                        {
+                            "name": "格物楼B221",
+                            "area": "B",
+                            "room_number": "221"
+                        },
+                        {
+                            "name": "格物楼B301",
+                            "area": "B",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "格物楼B303",
+                            "area": "B",
+                            "room_number": "303"
+                        },
+                        {
+                            "name": "格物楼B304",
+                            "area": "B",
+                            "room_number": "304"
+                        },
+                        {
+                            "name": "格物楼B305",
+                            "area": "B",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "格物楼B306",
+                            "area": "B",
+                            "room_number": "306"
+                        },
+                        {
+                            "name": "格物楼B309",
+                            "area": "B",
+                            "room_number": "309"
+                        },
+                        {
+                            "name": "格物楼B310",
+                            "area": "B",
+                            "room_number": "310"
+                        },
+                        {
+                            "name": "格物楼B313",
+                            "area": "B",
+                            "room_number": "313"
+                        },
+                        {
+                            "name": "格物楼B314",
+                            "area": "B",
+                            "room_number": "314"
+                        },
+                        {
+                            "name": "格物楼B316",
+                            "area": "B",
+                            "room_number": "316"
+                        },
+                        {
+                            "name": "格物楼B318",
+                            "area": "B",
+                            "room_number": "318"
+                        },
+                        {
+                            "name": "格物楼B320",
+                            "area": "B",
+                            "room_number": "320"
+                        },
+                        {
+                            "name": "格物楼B413",
+                            "area": "B",
+                            "room_number": "413"
+                        },
+                        {
+                            "name": "格物楼B418",
+                            "area": "B",
+                            "room_number": "418"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "棋牌教室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "棋牌教室",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "测试实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "测试实验室304",
+                            "area": "",
+                            "room_number": "304"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "物理楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "物理楼105",
+                            "area": "",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "物理楼113",
+                            "area": "",
+                            "room_number": "113"
+                        },
+                        {
+                            "name": "物理楼207",
+                            "area": "",
+                            "room_number": "207"
+                        },
+                        {
+                            "name": "物理楼210",
+                            "area": "",
+                            "room_number": "210"
+                        },
+                        {
+                            "name": "物理楼2阶1",
+                            "area": "",
+                            "room_number": "2阶1"
+                        },
+                        {
+                            "name": "物理楼2阶2",
+                            "area": "",
+                            "room_number": "2阶2"
+                        },
+                        {
+                            "name": "物理楼307",
+                            "area": "",
+                            "room_number": "307"
+                        },
+                        {
+                            "name": "物理楼310",
+                            "area": "",
+                            "room_number": "310"
+                        },
+                        {
+                            "name": "物理楼3阶1",
+                            "area": "",
+                            "room_number": "3阶1"
+                        },
+                        {
+                            "name": "物理楼3阶2",
+                            "area": "",
+                            "room_number": "3阶2"
+                        },
+                        {
+                            "name": "物理楼402",
+                            "area": "",
+                            "room_number": "402"
+                        },
+                        {
+                            "name": "物理楼411",
+                            "area": "",
+                            "room_number": "411"
+                        },
+                        {
+                            "name": "物理楼416",
+                            "area": "",
+                            "room_number": "416"
+                        },
+                        {
+                            "name": "物理楼509、511",
+                            "area": "",
+                            "room_number": "509、511"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "生态功能实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "生态功能实验室2",
+                            "area": "",
+                            "room_number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "生物楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "生物楼101",
+                            "area": "",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "生物楼102",
+                            "area": "",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "生物楼105",
+                            "area": "",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "生物楼109、111",
+                            "area": "",
+                            "room_number": "109、111"
+                        },
+                        {
+                            "name": "生物楼110",
+                            "area": "",
+                            "room_number": "110"
+                        },
+                        {
+                            "name": "生物楼114",
+                            "area": "",
+                            "room_number": "114"
+                        },
+                        {
+                            "name": "生物楼118",
+                            "area": "",
+                            "room_number": "118"
+                        },
+                        {
+                            "name": "生物楼128",
+                            "area": "",
+                            "room_number": "128"
+                        },
+                        {
+                            "name": "生物楼131",
+                            "area": "",
+                            "room_number": "131"
+                        },
+                        {
+                            "name": "生物楼135",
+                            "area": "",
+                            "room_number": "135"
+                        },
+                        {
+                            "name": "生物楼229",
+                            "area": "",
+                            "room_number": "229"
+                        },
+                        {
+                            "name": "生物楼233",
+                            "area": "",
+                            "room_number": "233"
+                        },
+                        {
+                            "name": "生物楼308",
+                            "area": "",
+                            "room_number": "308"
+                        },
+                        {
+                            "name": "生物楼312",
+                            "area": "",
+                            "room_number": "312"
+                        },
+                        {
+                            "name": "生物楼313",
+                            "area": "",
+                            "room_number": "313"
+                        },
+                        {
+                            "name": "生物楼317",
+                            "area": "",
+                            "room_number": "317"
+                        },
+                        {
+                            "name": "生物楼320",
+                            "area": "",
+                            "room_number": "320"
+                        },
+                        {
+                            "name": "生物楼326",
+                            "area": "",
+                            "room_number": "326"
+                        },
+                        {
+                            "name": "生物楼327",
+                            "area": "",
+                            "room_number": "327"
+                        },
+                        {
+                            "name": "生物楼331",
+                            "area": "",
+                            "room_number": "331"
+                        },
+                        {
+                            "name": "生物楼332",
+                            "area": "",
+                            "room_number": "332"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "田径场",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "田径场1",
+                            "area": "",
+                            "room_number": "1"
+                        },
+                        {
+                            "name": "田径场2",
+                            "area": "",
+                            "room_number": "2"
+                        },
+                        {
+                            "name": "田径场3",
+                            "area": "",
+                            "room_number": "3"
+                        },
+                        {
+                            "name": "田径场5",
+                            "area": "",
+                            "room_number": "5"
+                        },
+                        {
+                            "name": "射艺场地（西田径场以西）",
+                            "area": "",
+                            "room_number": "地（西田径场以西）"
+                        },
+                        {
+                            "name": "西田径场",
+                            "area": "",
+                            "room_number": "场"
+                        },
+                        {
+                            "name": "东田径场",
+                            "area": "",
+                            "room_number": "场"
+                        },
+                        {
+                            "name": "西田径场1",
+                            "area": "",
+                            "room_number": "场1"
+                        },
+                        {
+                            "name": "校西田径场",
+                            "area": "",
+                            "room_number": "径场"
+                        },
+                        {
+                            "name": "TY田径场5",
+                            "area": "",
+                            "room_number": "径场5"
+                        },
+                        {
+                            "name": "田径场",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "看台",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "看台1",
+                            "area": "",
+                            "room_number": "1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "空间规划实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "空间规划实验室",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "第一舞蹈教室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "第一舞蹈教室",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "篮球场",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "篮球场1",
+                            "area": "",
+                            "room_number": "1"
+                        },
+                        {
+                            "name": "篮球场2",
+                            "area": "",
+                            "room_number": "2"
+                        },
+                        {
+                            "name": "篮球场3",
+                            "area": "",
+                            "room_number": "3"
+                        },
+                        {
+                            "name": "东篮球场01",
+                            "area": "",
+                            "room_number": "场01"
+                        },
+                        {
+                            "name": "东篮球场02",
+                            "area": "",
+                            "room_number": "场02"
+                        },
+                        {
+                            "name": "西篮球场03",
+                            "area": "",
+                            "room_number": "场03"
+                        },
+                        {
+                            "name": "西篮球场04",
+                            "area": "",
+                            "room_number": "场04"
+                        },
+                        {
+                            "name": "西篮球场05",
+                            "area": "",
+                            "room_number": "场05"
+                        },
+                        {
+                            "name": "篮球场",
+                            "area": "",
+                            "room_number": "无编号"
+                        },
+                        {
+                            "name": "校北篮球场",
+                            "area": "",
+                            "room_number": "球场"
+                        },
+                        {
+                            "name": "校西篮球场",
+                            "area": "",
+                            "room_number": "球场"
+                        },
+                        {
+                            "name": "校北篮球场乒乓球场地",
+                            "area": "",
+                            "room_number": "球场乒乓球场地"
+                        },
+                        {
+                            "name": "校北篮球场健美操教室",
+                            "area": "",
+                            "room_number": "球场健美操教室"
+                        },
+                        {
+                            "name": "校灯光篮球场武术场地",
+                            "area": "",
+                            "room_number": "篮球场武术场地"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "篮球馆",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "篮球馆（东）",
+                            "area": "",
+                            "room_number": "（东）"
+                        },
+                        {
+                            "name": "篮球馆（西）",
+                            "area": "",
+                            "room_number": "（西）"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "绘素楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "绘素楼205",
+                            "area": "",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "绘素楼305",
+                            "area": "",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "绘素楼309",
+                            "area": "",
+                            "room_number": "309"
+                        },
+                        {
+                            "name": "绘素楼315",
+                            "area": "",
+                            "room_number": "315"
+                        },
+                        {
+                            "name": "绘素楼316",
+                            "area": "",
+                            "room_number": "316"
+                        },
+                        {
+                            "name": "绘素楼318",
+                            "area": "",
+                            "room_number": "318"
+                        },
+                        {
+                            "name": "绘素楼319",
+                            "area": "",
+                            "room_number": "319"
+                        },
+                        {
+                            "name": "绘素楼323",
+                            "area": "",
+                            "room_number": "323"
+                        },
+                        {
+                            "name": "绘素楼325",
+                            "area": "",
+                            "room_number": "325"
+                        },
+                        {
+                            "name": "绘素楼405",
+                            "area": "",
+                            "room_number": "405"
+                        },
+                        {
+                            "name": "绘素楼407",
+                            "area": "",
+                            "room_number": "407"
+                        },
+                        {
+                            "name": "绘素楼408",
+                            "area": "",
+                            "room_number": "408"
+                        },
+                        {
+                            "name": "绘素楼409",
+                            "area": "",
+                            "room_number": "409"
+                        },
+                        {
+                            "name": "绘素楼410",
+                            "area": "",
+                            "room_number": "410"
+                        },
+                        {
+                            "name": "绘素楼412",
+                            "area": "",
+                            "room_number": "412"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "综合教学楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "综合教学楼101",
+                            "area": "",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "综合教学楼103",
+                            "area": "",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "综合教学楼105",
+                            "area": "",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "综合教学楼106",
+                            "area": "",
+                            "room_number": "106"
+                        },
+                        {
+                            "name": "综合教学楼201",
+                            "area": "",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "综合教学楼203",
+                            "area": "",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "综合教学楼205",
+                            "area": "",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "综合教学楼206",
+                            "area": "",
+                            "room_number": "206"
+                        },
+                        {
+                            "name": "综合教学楼301",
+                            "area": "",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "综合教学楼303",
+                            "area": "",
+                            "room_number": "303"
+                        },
+                        {
+                            "name": "综合教学楼305",
+                            "area": "",
+                            "room_number": "305"
+                        },
+                        {
+                            "name": "综合教学楼306",
+                            "area": "",
+                            "room_number": "306"
+                        },
+                        {
+                            "name": "综合教学楼307",
+                            "area": "",
+                            "room_number": "307"
+                        },
+                        {
+                            "name": "综合教学楼401",
+                            "area": "",
+                            "room_number": "401"
+                        },
+                        {
+                            "name": "综合教学楼403",
+                            "area": "",
+                            "room_number": "403"
+                        },
+                        {
+                            "name": "综合教学楼405",
+                            "area": "",
+                            "room_number": "405"
+                        },
+                        {
+                            "name": "综合教学楼406",
+                            "area": "",
+                            "room_number": "406"
+                        },
+                        {
+                            "name": "综合教学楼407",
+                            "area": "",
+                            "room_number": "407"
+                        },
+                        {
+                            "name": "综合教学楼501",
+                            "area": "",
+                            "room_number": "501"
+                        },
+                        {
+                            "name": "综合教学楼503",
+                            "area": "",
+                            "room_number": "503"
+                        },
+                        {
+                            "name": "综合教学楼505",
+                            "area": "",
+                            "room_number": "505"
+                        },
+                        {
+                            "name": "综合教学楼506",
+                            "area": "",
+                            "room_number": "506"
+                        },
+                        {
+                            "name": "综合教学楼507",
+                            "area": "",
+                            "room_number": "507"
+                        },
+                        {
+                            "name": "综合教学楼601",
+                            "area": "",
+                            "room_number": "601"
+                        },
+                        {
+                            "name": "综合教学楼603",
+                            "area": "",
+                            "room_number": "603"
+                        },
+                        {
+                            "name": "综合教学楼605",
+                            "area": "",
+                            "room_number": "605"
+                        },
+                        {
+                            "name": "综合教学楼606",
+                            "area": "",
+                            "room_number": "606"
+                        },
+                        {
+                            "name": "综合教学楼607",
+                            "area": "",
+                            "room_number": "607"
+                        },
+                        {
+                            "name": "综合教学楼701",
+                            "area": "",
+                            "room_number": "701"
+                        },
+                        {
+                            "name": "综合教学楼703",
+                            "area": "",
+                            "room_number": "703"
+                        },
+                        {
+                            "name": "综合教学楼705",
+                            "area": "",
+                            "room_number": "705"
+                        },
+                        {
+                            "name": "综合教学楼706",
+                            "area": "",
+                            "room_number": "706"
+                        },
+                        {
+                            "name": "综合教学楼707",
+                            "area": "",
+                            "room_number": "707"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "综合楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "综合楼903教室",
+                            "area": "",
+                            "room_number": "903教室"
+                        },
+                        {
+                            "name": "综合楼903教室02",
+                            "area": "",
+                            "room_number": "903教室02"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "网球场",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "网球场01",
+                            "area": "",
+                            "room_number": "01"
+                        },
+                        {
+                            "name": "网球场02",
+                            "area": "",
+                            "room_number": "02"
+                        },
+                        {
+                            "name": "网球场1",
+                            "area": "",
+                            "room_number": "1"
+                        },
+                        {
+                            "name": "校西网球场",
+                            "area": "",
+                            "room_number": "球场"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "羽毛球馆",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "羽毛球馆",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "老文史楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "老文史楼101",
+                            "area": "",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "老文史楼103",
+                            "area": "",
+                            "room_number": "103"
+                        },
+                        {
+                            "name": "老文史楼105",
+                            "area": "",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "老文史楼107",
+                            "area": "",
+                            "room_number": "107"
+                        },
+                        {
+                            "name": "老文史楼109",
+                            "area": "",
+                            "room_number": "109"
+                        },
+                        {
+                            "name": "老文史楼111",
+                            "area": "",
+                            "room_number": "111"
+                        },
+                        {
+                            "name": "老文史楼113",
+                            "area": "",
+                            "room_number": "113"
+                        },
+                        {
+                            "name": "老文史楼115",
+                            "area": "",
+                            "room_number": "115"
+                        },
+                        {
+                            "name": "老文史楼121",
+                            "area": "",
+                            "room_number": "121"
+                        },
+                        {
+                            "name": "老文史楼201",
+                            "area": "",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "老文史楼203",
+                            "area": "",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "老文史楼205",
+                            "area": "",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "老文史楼207",
+                            "area": "",
+                            "room_number": "207"
+                        },
+                        {
+                            "name": "老文史楼209",
+                            "area": "",
+                            "room_number": "209"
+                        },
+                        {
+                            "name": "老文史楼211",
+                            "area": "",
+                            "room_number": "211"
+                        },
+                        {
+                            "name": "老文史楼213",
+                            "area": "",
+                            "room_number": "213"
+                        },
+                        {
+                            "name": "老文史楼215",
+                            "area": "",
+                            "room_number": "215"
+                        },
+                        {
+                            "name": "老文史楼216",
+                            "area": "",
+                            "room_number": "216"
+                        },
+                        {
+                            "name": "老文史楼226",
+                            "area": "",
+                            "room_number": "226"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "致知楼",
+            "areas": [
+                {
+                    "name": "B",
+                    "rooms": [
+                        {
+                            "name": "致知楼B101",
+                            "area": "B",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "致知楼B102",
+                            "area": "B",
+                            "room_number": "102"
+                        },
+                        {
+                            "name": "致知楼B105",
+                            "area": "B",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "致知楼B106",
+                            "area": "B",
+                            "room_number": "106"
+                        },
+                        {
+                            "name": "致知楼B107",
+                            "area": "B",
+                            "room_number": "107"
+                        },
+                        {
+                            "name": "致知楼B108",
+                            "area": "B",
+                            "room_number": "108"
+                        },
+                        {
+                            "name": "致知楼B109",
+                            "area": "B",
+                            "room_number": "109"
+                        },
+                        {
+                            "name": "致知楼B111",
+                            "area": "B",
+                            "room_number": "111"
+                        },
+                        {
+                            "name": "致知楼B112",
+                            "area": "B",
+                            "room_number": "112"
+                        },
+                        {
+                            "name": "致知楼B114",
+                            "area": "B",
+                            "room_number": "114"
+                        },
+                        {
+                            "name": "致知楼B115",
+                            "area": "B",
+                            "room_number": "115"
+                        },
+                        {
+                            "name": "致知楼B201",
+                            "area": "B",
+                            "room_number": "201"
+                        },
+                        {
+                            "name": "致知楼B202",
+                            "area": "B",
+                            "room_number": "202"
+                        },
+                        {
+                            "name": "致知楼B203",
+                            "area": "B",
+                            "room_number": "203"
+                        },
+                        {
+                            "name": "致知楼B204",
+                            "area": "B",
+                            "room_number": "204"
+                        },
+                        {
+                            "name": "致知楼B205",
+                            "area": "B",
+                            "room_number": "205"
+                        },
+                        {
+                            "name": "致知楼B206",
+                            "area": "B",
+                            "room_number": "206"
+                        },
+                        {
+                            "name": "致知楼B211",
+                            "area": "B",
+                            "room_number": "211"
+                        },
+                        {
+                            "name": "致知楼B212",
+                            "area": "B",
+                            "room_number": "212"
+                        },
+                        {
+                            "name": "致知楼B213",
+                            "area": "B",
+                            "room_number": "213"
+                        },
+                        {
+                            "name": "致知楼B215",
+                            "area": "B",
+                            "room_number": "215"
+                        },
+                        {
+                            "name": "致知楼B301",
+                            "area": "B",
+                            "room_number": "301"
+                        },
+                        {
+                            "name": "致知楼B302",
+                            "area": "B",
+                            "room_number": "302"
+                        },
+                        {
+                            "name": "致知楼B303",
+                            "area": "B",
+                            "room_number": "303"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "虚拟仿真实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "虚拟仿真实验室",
+                            "area": "",
+                            "room_number": "无编号"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "西联",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "西联1",
+                            "area": "",
+                            "room_number": "1"
+                        },
+                        {
+                            "name": "西联2",
+                            "area": "",
+                            "room_number": "2"
+                        },
+                        {
+                            "name": "西联3",
+                            "area": "",
+                            "room_number": "3"
+                        },
+                        {
+                            "name": "西联4",
+                            "area": "",
+                            "room_number": "4"
+                        },
+                        {
+                            "name": "西联5",
+                            "area": "",
+                            "room_number": "5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "足球场",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "足球场1",
+                            "area": "",
+                            "room_number": "1"
+                        },
+                        {
+                            "name": "足球场2",
+                            "area": "",
+                            "room_number": "2"
+                        },
+                        {
+                            "name": "足球场3",
+                            "area": "",
+                            "room_number": "3"
+                        },
+                        {
+                            "name": "足球场4",
+                            "area": "",
+                            "room_number": "4"
+                        },
+                        {
+                            "name": "东足球场",
+                            "area": "",
+                            "room_number": "场"
+                        },
+                        {
+                            "name": "东足球场2",
+                            "area": "",
+                            "room_number": "场2"
+                        },
+                        {
+                            "name": "西足球场2",
+                            "area": "",
+                            "room_number": "场2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "软件基础实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "软件基础实验室301",
+                            "area": "",
+                            "room_number": "301"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "软件实训实验室",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "软件实训实验室201",
+                            "area": "",
+                            "room_number": "201"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "闻韶楼",
+            "areas": [
+                {
+                    "name": "",
+                    "rooms": [
+                        {
+                            "name": "闻韶楼B504电钢教室1",
+                            "area": "",
+                            "room_number": "B504电钢教室1"
+                        },
+                        {
+                            "name": "闻韶楼B508电钢教室3",
+                            "area": "",
+                            "room_number": "B508电钢教室3"
+                        },
+                        {
+                            "name": "闻韶楼C318舞蹈教室3",
+                            "area": "",
+                            "room_number": "C318舞蹈教室3"
+                        },
+                        {
+                            "name": "闻韶楼C519舞蹈教室6",
+                            "area": "",
+                            "room_number": "C519舞蹈教室6"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "rooms": [
+                        {
+                            "name": "闻韶楼B101",
+                            "area": "B",
+                            "room_number": "101"
+                        },
+                        {
+                            "name": "闻韶楼B104",
+                            "area": "B",
+                            "room_number": "104"
+                        },
+                        {
+                            "name": "闻韶楼B105",
+                            "area": "B",
+                            "room_number": "105"
+                        },
+                        {
+                            "name": "闻韶楼B106",
+                            "area": "B",
+                            "room_number": "106"
+                        },
+                        {
+                            "name": "闻韶楼B107",
+                            "area": "B",
+                            "room_number": "107"
+                        },
+                        {
+                            "name": "闻韶楼B108",
+                            "area": "B",
+                            "room_number": "108"
+                        },
+                        {
+                            "name": "闻韶楼B109",
+                            "area": "B",
+                            "room_number": "109"
+                        },
+                        {
+                            "name": "闻韶楼B303",
+                            "area": "B",
+                            "room_number": "303"
+                        },
+                        {
+                            "name": "闻韶楼B304",
+                            "area": "B",
+                            "room_number": "304"
+                        },
+                        {
+                            "name": "闻韶楼B407",
+                            "area": "B",
+                            "room_number": "407"
+                        },
+                        {
+                            "name": "闻韶楼B408",
+                            "area": "B",
+                            "room_number": "408"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
