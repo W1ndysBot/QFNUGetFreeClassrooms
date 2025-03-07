@@ -5,6 +5,7 @@ import os
 import sys
 import re
 import json
+from bs4 import BeautifulSoup
 
 # 添加项目根目录到sys.path
 sys.path.append(
@@ -89,6 +90,150 @@ async def toggle_function_status(websocket, group_id, message_id, authorized):
             f"[CQ:reply,id={message_id}]✅✅✅QFNUGetFreeClassrooms功能已开启",
         )
 
+
+# 解析HTML内容，获取教室课程安排信息
+def parse_classroom_schedule(html_content, day_of_week=None, time_slot=None):
+    """
+    解析HTML内容，获取教室课程安排信息
+    
+    参数:
+        html_content: 教务系统返回的HTML内容
+        day_of_week: 星期几 (1-7，1代表星期一，如果为None则返回所有天的数据)
+        time_slot: 时间段 (可选值: "0102", "0304", "0506", "0708", "091011", "1213"，如果为None则返回所有时间段)
+    
+    返回:
+        dict: 按天和时间段组织的教室课程安排字典，格式为 {day: {time_slot: {classroom: course_info}}}
+    """
+    # 解析HTML
+    soup = BeautifulSoup(html_content, 'html.parser')
+    
+    # 获取所有教室行
+    classroom_rows = soup.select('#kbtable tr')
+    
+    # 跳过表头行
+    classroom_rows = classroom_rows[2:]  # 跳过前两行表头
+    
+    # 初始化结果字典
+    classroom_schedule = {}
+    for d in range(1, 8):  # 1-7表示周一到周日
+        classroom_schedule[d] = {}
+        for t in ["0102", "0304", "0506", "0708", "091011", "1213"]:
+            classroom_schedule[d][t] = {}
+    
+    # 遍历每个教室行
+    for row in classroom_rows:
+        cells = row.find_all('td')
+        if len(cells) < 43:  # 确保行有足够的单元格
+            continue
+        
+        # 获取教室名称
+        classroom_name = cells[0].get_text().strip()
+        
+        # 遍历每天的每个时间段
+        for day in range(1, 8):  # 1-7表示周一到周日
+            for time_idx, time_period in enumerate(["0102", "0304", "0506", "0708", "091011", "1213"]):
+                # 计算单元格索引
+                cell_idx = (day - 1) * 6 + time_idx + 1
+                
+                # 获取单元格内容
+                cell_content = cells[cell_idx].get_text().strip()
+                if cell_content and cell_content != "&nbsp;" and cell_content != " ":
+                    # 有课程安排
+                    classroom_schedule[day][time_period][classroom_name] = cell_content
+    
+    # 如果指定了特定的天和时间段，只返回那些数据
+    if day_of_week is not None and time_slot is not None:
+        return {day_of_week: {time_slot: classroom_schedule[day_of_week][time_slot]}}
+    elif day_of_week is not None:
+        return {day_of_week: classroom_schedule[day_of_week]}
+    elif time_slot is not None:
+        result = {}
+        for day in range(1, 8):
+            if day not in result:
+                result[day] = {}
+            result[day][time_slot] = classroom_schedule[day][time_slot]
+        return result
+    
+    return classroom_schedule
+
+# 获取空闲教室信息
+def get_free_classrooms(classroom_schedule, all_classrooms, day_of_week=None, time_slot=None):
+    """
+    根据课程安排获取空闲教室信息
+    
+    参数:
+        classroom_schedule: parse_classroom_schedule函数返回的字典
+        all_classrooms: 所有教室的列表
+        day_of_week: 星期几 (1-7，1代表星期一，如果为None则返回所有天的数据)
+        time_slot: 时间段 (可选值: "0102", "0304", "0506", "0708", "091011", "1213"，如果为None则返回所有时间段)
+    
+    返回:
+        dict: 按天和时间段组织的空闲教室字典
+    """
+    free_classrooms = {}
+    
+    days_to_process = [day_of_week] if day_of_week is not None else range(1, 8)
+    
+    for day in days_to_process:
+        if isinstance(day, int):  # 确保day是整数
+            if day not in free_classrooms:
+                free_classrooms[day] = {}
+            
+            time_slots_to_process = [time_slot] if time_slot is not None else ["0102", "0304", "0506", "0708", "091011", "1213"]
+            
+            for slot in time_slots_to_process:
+                # 获取该时间段有课的教室
+                occupied_classrooms = set(classroom_schedule.get(day, {}).get(slot, {}).keys())
+                
+                # 计算空闲教室
+                free_classrooms[day][slot] = [room for room in all_classrooms if room not in occupied_classrooms]
+    
+    return free_classrooms
+
+# 格式化输出空闲教室信息
+def format_free_classrooms(free_classrooms):
+    """
+    将空闲教室信息格式化为易读的文本
+    
+    参数:
+        free_classrooms: get_free_classrooms函数返回的字典
+    
+    返回:
+        str: 格式化后的文本
+    """
+    weekday_names = {
+        1: "星期一",
+        2: "星期二",
+        3: "星期三",
+        4: "星期四",
+        5: "星期五",
+        6: "星期六",
+        7: "星期日"
+    }
+    
+    time_slot_names = {
+        "0102": "第1-2节",
+        "0304": "第3-4节",
+        "0506": "第5-6节",
+        "0708": "第7-8节",
+        "091011": "第9-11节",
+        "1213": "第12-13节"
+    }
+    
+    result = []
+    
+    for day, time_slots in sorted(free_classrooms.items()):
+        result.append(f"【{weekday_names[day]}】")
+        
+        for time_slot, classrooms in sorted(time_slots.items()):
+            if classrooms:  # 如果有空闲教室
+                result.append(f"  {time_slot_names[time_slot]}: {', '.join(classrooms)}")
+            else:
+                result.append(f"  {time_slot_names[time_slot]}: 无空闲教室")
+        
+        result.append("")  # 添加空行分隔不同天
+    
+    return "\n".join(result)
 
 # 群消息处理函数
 async def handle_group_message(websocket, msg):
