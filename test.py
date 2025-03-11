@@ -47,4 +47,9 @@ def get_free_classrooms():
 if __name__ == "__main__":
     result = get_free_classrooms()
     if result:
-        print(result)
+        if "<title>登录</title>" in result:
+            print("登录失效，请重新获取cookie")
+        else:
+            print(result)
+    else:
+        print("请求失败")
