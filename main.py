@@ -611,7 +611,12 @@ async def get_free_rooms(
         await send_group_msg(
             websocket,
             group_id,
-            f"[CQ:reply,id={message_id}]❌❌❌登录教务系统失败，请检查账号密码",
+            f"[CQ:reply,id={message_id}]❌❌❌登录教务系统失败，请联系管理员更新cookies",
+        )
+        await send_private_msg(
+            websocket,
+            owner_id[0],
+            f"[CQ:reply,id={message_id}]❌❌❌空闲教室查询失败，请及时检查cookies，发送【存储教务账号密码+账号+密码】更新cookies",
         )
         return
 
