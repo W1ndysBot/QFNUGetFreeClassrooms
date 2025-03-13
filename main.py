@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup
 import colorlog
 from io import BytesIO
 from PIL import Image
+import asyncio
 
 # 添加项目根目录到sys.path
 sys.path.append(
@@ -29,6 +30,7 @@ from app.scripts.QFNUGetFreeClassrooms.src.utils.captcha_ocr import get_ocr_res
 from app.scripts.QFNUGetFreeClassrooms.src.core.get_room_classtable import (
     get_room_classtable,
 )
+from app.api import send_group_msg, send_private_msg, delete_msg
 
 
 # 数据存储路径，实际开发时，请将QFNUGetFreeClassrooms替换为具体的数据存放路径
@@ -46,6 +48,10 @@ SEMESTER_START_DATES = {
     "2024-2025-1": "2024-09-02",  # 2024-2025学年第一学期开学日期
     "2024-2025-2": "2025-02-17",  # 2024-2025学年第二学期开学日期
 }
+
+
+# 添加全局变量存储消息ID
+QUERY_MESSAGE_IDS = []
 
 
 # 查看功能开关状态
@@ -620,11 +626,6 @@ async def get_free_rooms(
         )
         return
 
-    await send_group_msg(
-        websocket,
-        group_id,
-        f"[CQ:reply,id={message_id}]正在查询空闲教室，请稍候...",
-    )
     # 获取当前学期
     xnxqh = get_current_term()
 
@@ -699,6 +700,14 @@ async def get_free_rooms(
             f"[CQ:reply,id={message_id}]{message}",
         )
 
+        # 延迟0.5秒后撤回"正在查询"的消息
+        await asyncio.sleep(0.5)
+        if QUERY_MESSAGE_IDS:
+
+            for message_id in QUERY_MESSAGE_IDS:
+                await delete_msg(websocket, message_id)
+            QUERY_MESSAGE_IDS.clear()
+
     except Exception as e:
         logging.error(f"查询空闲教室出错: {str(e)}")
         await send_group_msg(
@@ -736,6 +745,28 @@ async def handle_group_message(websocket, msg):
                 # 解析命令参数
                 params = raw_message[4:].strip().split()
 
+                # 如果没有参数，显示使用说明
+                if not params:
+                    usage_message = (
+                        "【查空教室使用说明】\n\n"
+                        "基本格式：查空教室 [教学楼] [日期]\n\n"
+                        "示例：\n"
+                        "- 查空教室 格物楼 （查询当天格物楼空闲教室）\n"
+                        "- 查空教室 致知楼 今天 （查询今天致知楼空闲教室）\n"
+                        "- 查空教室 格物楼 明天 （查询明天格物楼空闲教室）\n"
+                        "- 查空教室 格物楼 后天 （查询后天格物楼空闲教室）\n\n"
+                        "可用建筑：格物楼、致知楼等\n"
+                        "可用日期：今天、明天、后天\n"
+                        "默认只查全天无课的教室，后期自定义时间段待更新\n"
+                        "支持节次的在线查询：https://freeclassrooms.w1ndys.top\n"
+                    )
+                    await send_group_msg(
+                        websocket,
+                        group_id,
+                        f"[CQ:reply,id={message_id}]{usage_message}",
+                    )
+                    return
+
                 if params:
                     building_prefix = params[0]
 
@@ -751,6 +782,11 @@ async def handle_group_message(websocket, msg):
                                 if specific_day == 0:
                                     specific_day = 7
 
+                await send_group_msg(
+                    websocket,
+                    group_id,
+                    f"[CQ:reply,id={message_id}]正在查询空闲教室，请稍候...",
+                )
                 await get_free_rooms(
                     websocket, group_id, message_id, building_prefix, specific_day
                 )
@@ -813,10 +849,14 @@ async def handle_group_notice(websocket, msg):
 async def handle_response(websocket, msg):
     """处理回调事件"""
     try:
-        echo = msg.get("echo")
-        if echo and echo.startswith("xxx"):
-            # 回调处理逻辑
-            pass
+        echo = msg.get("echo", "")
+        if echo and echo.startswith("send_group_msg_") and "正在查询空闲教室" in echo:
+            # 存储消息ID用于后续撤回
+            message_id = msg.get("data", {}).get("message_id")
+            if message_id:
+                QUERY_MESSAGE_IDS.append(message_id)
+                logging.info(f"查询空闲教室消息ID: {message_id}")
+
     except Exception as e:
         logging.error(f"处理QFNUGetFreeClassrooms回调事件失败: {e}")
         await send_group_msg(

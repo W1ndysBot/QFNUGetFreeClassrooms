@@ -175,11 +175,11 @@ def parse_classtable_new(table, specific_day=None, room_name=None, jc1=None, jc2
 
             # 获取教室名
             current_room_name = cells[0].text.strip()
-            logging.info(f"处理教室: {current_room_name}")
+            # logging.info(f"处理教室: {current_room_name}")
 
             # 检查是否匹配前缀
             if room_name and not current_room_name.startswith(room_name):
-                logging.info(f"教室 {current_room_name} 不匹配前缀 {room_name}，跳过")
+                # logging.info(f"教室 {current_room_name} 不匹配前缀 {room_name}，跳过")
                 continue
 
             room_schedule = {}
