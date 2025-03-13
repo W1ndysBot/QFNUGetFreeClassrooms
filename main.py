@@ -691,7 +691,13 @@ async def get_free_rooms(
                 message += f"{building}:\n"
                 message += ", ".join(rooms) + "\n\n"
         else:
-            message += "无空闲教室"
+            message += "无空闲教室\n"
+
+        message += f"查询时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+
+        message += "只查询全天无课的教室，后期自定义时间段待更新\n"
+        message += "支持节次的在线查询：https://freeclassrooms.w1ndys.top\n"
+        message += "\n微信公众号【W1ndys】\n点击链接加入群聊【Easy-QFNU｜曲师大选课指北群】：https://qm.qq.com/q/GECobaRGoO"
 
         # 发送消息
         await send_group_msg(
