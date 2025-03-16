@@ -549,22 +549,29 @@ def get_current_week_and_day():
 # 获取所有教室列表
 def get_all_classrooms(building_prefix=None):
     """获取所有教室列表，如果指定了建筑前缀，则只返回该建筑的教室"""
-    # 尝试从配置文件加载教室列表
-    classrooms_file = os.path.join(DATA_DIR, "classrooms.json")
+    # 尝试从当前目录的classrooms.json文件加载教室列表
+    classrooms_file = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+        "scripts",
+        "QFNUGetFreeClassrooms",
+        "classrooms.json",
+    )
 
     if os.path.exists(classrooms_file):
         try:
             with open(classrooms_file, "r", encoding="utf-8") as f:
                 classrooms_data = json.load(f)
                 all_rooms = classrooms_data.get("classrooms", [])
+                logging.info(f"教室列表: {all_rooms}")
         except Exception as e:
             logging.error(f"读取教室配置文件出错: {str(e)}")
             # 使用默认教室列表
             all_rooms = get_default_classrooms()
+            logging.info(f"默认教室列表: {all_rooms}")
     else:
         # 使用默认教室列表
         all_rooms = get_default_classrooms()
-
+        logging.info(f"默认教室列表: {all_rooms}")
     if building_prefix:
         return [room for room in all_rooms if room.startswith(building_prefix)]
     return all_rooms
@@ -642,9 +649,9 @@ async def get_free_rooms(
     room_name = building_prefix if building_prefix else ""
 
     try:
-        # 查询空闲教室
+        # 查询有课的教室
         result = get_room_classtable(xnxqh, room_name, current_week, query_day)
-
+        logging.info(f"查询结果: {result}")
         # 处理结果
         if "error" in result:
             await send_group_msg(
@@ -656,8 +663,11 @@ async def get_free_rooms(
 
         # 解析结果，找出空闲教室
         all_rooms = get_all_classrooms(room_name)
+        logging.info(f"所有教室: {all_rooms}")
         occupied_rooms = extract_occupied_rooms(result)
+        logging.info(f"被占用的教室: {occupied_rooms}")
         free_rooms = [room for room in all_rooms if room not in occupied_rooms]
+        logging.info(f"空闲教室: {free_rooms}")
 
         # 格式化消息
         weekday_names = {
@@ -693,7 +703,7 @@ async def get_free_rooms(
         else:
             message += "无空闲教室\n"
 
-        message += f"查询时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        message += f"\n查询时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
 
         message += "只查询全天无课的教室，后期自定义时间段待更新\n"
         message += "支持节次的在线查询：https://freeclassrooms.w1ndys.top\n"
