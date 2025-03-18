@@ -616,7 +616,13 @@ def extract_occupied_rooms(result):
 
 # 获取空闲教室
 async def get_free_rooms(
-    websocket, group_id, message_id, building_prefix=None, specific_day=None
+    websocket,
+    group_id,
+    message_id,
+    building_prefix=None,
+    specific_day=None,
+    jc1=None,
+    jc2=None,
 ):
     """获取空闲教室并发送到群"""
 
@@ -649,8 +655,10 @@ async def get_free_rooms(
     room_name = building_prefix if building_prefix else ""
 
     try:
-        # 查询有课的教室
-        result = get_room_classtable(xnxqh, room_name, current_week, query_day)
+        # 查询有课的教室，传递节次参数
+        result = get_room_classtable(
+            xnxqh, room_name, current_week, query_day, jc1, jc2
+        )
         logging.info(f"查询结果: {result}")
         # 处理结果
         if "error" in result:
@@ -682,7 +690,13 @@ async def get_free_rooms(
 
         message = f"【空闲教室查询结果】\n\n"
         message += f"学期: {xnxqh}\n"
-        message += f"第{current_week}周 {weekday_names[query_day]}\n\n"
+        message += f"第{current_week}周 {weekday_names[query_day]}"
+
+        # 添加节次信息
+        if jc1 and jc2:
+            message += f" 第{int(jc1)}-{int(jc2)}节"
+
+        message += "\n\n"
 
         if free_rooms:
             # 按教学楼分组
@@ -705,7 +719,13 @@ async def get_free_rooms(
 
         message += f"\n查询时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
 
-        message += "只查询全天无课的教室，后期自定义时间段待更新\n"
+        # 更新消息内容
+        if jc1 and jc2:
+            message += f"当前查询的是第{int(jc1)}-{int(jc2)}节的空闲教室\n"
+            message += "支持任意节次范围查询，例如1-4、3-8等\n"
+        else:
+            message += "查询的是全天无课的教室\n"
+
         message += "支持节次的在线查询：https://freeclassrooms.w1ndys.top\n"
         message += "\n微信公众号【W1ndys】\n点击链接加入群聊【Easy-QFNU｜曲师大选课指北群】：https://qm.qq.com/q/GECobaRGoO"
 
@@ -754,10 +774,6 @@ async def handle_group_message(websocket, msg):
         if load_function_status(group_id):
             # 处理查询空闲教室命令
             if raw_message.startswith("查空教室"):
-                # 提取可能的建筑前缀
-                building_prefix = None
-                specific_day = None
-
                 # 解析命令参数
                 params = raw_message[4:].strip().split()
 
@@ -765,16 +781,21 @@ async def handle_group_message(websocket, msg):
                 if not params:
                     usage_message = (
                         "【查空教室使用说明】\n\n"
-                        "基本格式：查空教室 [教学楼] [日期]\n\n"
+                        "基本格式：查空教室 [教学楼] [日期] [节次]\n\n"
                         "示例：\n"
-                        "- 查空教室 格物楼 （查询当天格物楼空闲教室）\n"
-                        "- 查空教室 致知楼 今天 （查询今天致知楼空闲教室）\n"
-                        "- 查空教室 格物楼 明天 （查询明天格物楼空闲教室）\n"
-                        "- 查空教室 格物楼 后天 （查询后天格物楼空闲教室）\n\n"
+                        "- 查空教室 格物楼 （查询当天格物楼全天空闲的教室）\n"
+                        "- 查空教室 致知楼 今天 （查询今天致知楼全天空闲的教室）\n"
+                        "- 查空教室 格物楼 明天 （查询明天格物楼全天空闲的教室）\n"
+                        "- 查空教室 格物楼 后天 （查询后天格物楼全天空闲的教室）\n"
+                        "- 查空教室 格物楼 明天 1-2 （查询明天格物楼第1-2节的空闲教室）\n"
+                        "- 查空教室 格物楼 今天 3-4 （查询今天格物楼第3-4节的空闲教室）\n"
+                        "- 查空教室 格物楼 明天 1-4 （查询明天格物楼第1-4节的空闲教室）\n"
+                        "- 查空教室 格物楼 今天 3-8 （查询今天格物楼第3-8节的空闲教室）\n\n"
                         "可用建筑：格物楼、致知楼等\n"
                         "可用日期：今天、明天、后天\n"
-                        "默认只查全天无课的教室，后期自定义时间段待更新\n"
-                        "支持节次的在线查询：https://freeclassrooms.w1ndys.top\n"
+                        "可用节次：支持任意范围组合，如1-2、3-4、5-6、7-8、9-11、12-13、1-4、3-8等\n\n"
+                        "注意：不指定节次则查询全天无课的教室\n"
+                        "支持更多自定义查询：https://freeclassrooms.w1ndys.top\n"
                     )
                     await send_group_msg(
                         websocket,
@@ -782,6 +803,12 @@ async def handle_group_message(websocket, msg):
                         f"[CQ:reply,id={message_id}]{usage_message}",
                     )
                     return
+
+                # 初始化参数
+                building_prefix = None
+                specific_day = None
+                jc1 = None  # 开始节次
+                jc2 = None  # 结束节次
 
                 if params:
                     building_prefix = params[0]
@@ -798,13 +825,46 @@ async def handle_group_message(websocket, msg):
                                 if specific_day == 0:
                                     specific_day = 7
 
+                    # 检查是否指定了节次范围
+                    if len(params) > 2:
+                        period_param = params[2]
+                        # 检查是否为节次格式（如"1-2"、"1-4"、"3-8"等）
+                        if "-" in period_param:
+                            try:
+                                period_parts = period_param.split("-")
+                                if len(period_parts) == 2:
+                                    jc1 = period_parts[0].strip()
+                                    jc2 = period_parts[1].strip()
+                                    # 确保是有效数字
+                                    if jc1.isdigit() and jc2.isdigit():
+                                        # 将个位数补充为两位数格式
+                                        jc1 = jc1.zfill(2)
+                                        jc2 = jc2.zfill(2)
+
+                                        # 确保开始节次不大于结束节次
+                                        if int(jc1) > int(jc2):
+                                            jc1, jc2 = jc2, jc1  # 交换，确保顺序正确
+                                    else:
+                                        jc1 = None
+                                        jc2 = None
+                            except Exception as e:
+                                logging.error(f"解析节次参数出错: {str(e)}")
+                                jc1 = None
+                                jc2 = None
+
                 await send_group_msg(
                     websocket,
                     group_id,
                     f"[CQ:reply,id={message_id}]正在查询空闲教室，请稍候...",
                 )
                 await get_free_rooms(
-                    websocket, group_id, message_id, building_prefix, specific_day
+                    websocket,
+                    group_id,
+                    message_id,
+                    building_prefix,
+                    specific_day,
+                    jc1,
+                    jc2,
                 )
                 return
     except Exception as e:
