@@ -826,10 +826,12 @@ async def handle_private_message(websocket, msg):
         raw_message = str(msg.get("raw_message"))
         message_id = str(msg.get("message_id"))
         authorized = user_id in owner_id
-        # 私聊消息处理逻辑
-        await save_account_and_password(
-            websocket, user_id, message_id, raw_message, authorized
-        )
+
+        # 仅在触发特定命令时进行鉴权检查
+        if raw_message.startswith("存储教务账号密码"):
+            await save_account_and_password(
+                websocket, user_id, message_id, raw_message, authorized
+            )
     except Exception as e:
         logging.error(f"处理QFNUGetFreeClassrooms私聊消息失败: {e}")
         await send_private_msg(
