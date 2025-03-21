@@ -717,7 +717,8 @@ async def get_free_rooms(
                 message += f"{building}:\n"
                 message += ", ".join(rooms) + "\n\n"
         else:
-            message += "无空闲教室\n可用建筑：格物楼、致知楼等，注意不要写简称，例如综合教学楼写综合楼，但可以搜综合，JA写A楼，支持前缀匹配，但不支持简称\n"
+            message += "无空闲教室或查询格式错误，注意空格\n\n"
+            message += "可用建筑：格物楼、致知楼等，注意不要写简称，例如综合教学楼写综合楼，但可以搜综合，JA写A楼，支持前缀匹配，但不支持简称\n"
 
         message += f"\n查询时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
 
