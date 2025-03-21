@@ -671,11 +671,11 @@ async def get_free_rooms(
 
         # 解析结果，找出空闲教室
         all_rooms = get_all_classrooms(room_name)
-        logging.info(f"所有教室: {all_rooms}")
+        # logging.info(f"所有教室: {all_rooms}")
         occupied_rooms = extract_occupied_rooms(result)
-        logging.info(f"被占用的教室: {occupied_rooms}")
+        # logging.info(f"被占用的教室: {occupied_rooms}")
         free_rooms = [room for room in all_rooms if room not in occupied_rooms]
-        logging.info(f"空闲教室: {free_rooms}")
+        # logging.info(f"空闲教室: {free_rooms}")
 
         # 格式化消息
         weekday_names = {
@@ -695,6 +695,8 @@ async def get_free_rooms(
         # 添加节次信息
         if jc1 and jc2:
             message += f" 第{int(jc1)}-{int(jc2)}节"
+        else:
+            message += " 全天"
 
         message += "\n\n"
 
@@ -857,6 +859,11 @@ async def handle_group_message(websocket, msg):
                     group_id,
                     f"[CQ:reply,id={message_id}]正在查询空闲教室，请稍候...",
                 )
+
+                # 替换“综合楼”为“综合教学楼”
+                if building_prefix == "综合楼":
+                    building_prefix = "综合教学楼"
+
                 await get_free_rooms(
                     websocket,
                     group_id,
